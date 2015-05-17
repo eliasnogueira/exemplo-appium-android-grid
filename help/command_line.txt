@@ -1,0 +1,12 @@
+
+
+# inicia selenium grid como hub
+java -jar selenium-server-standalone-2.45.0.jar -role hub
+
+
+# inicia no local appium grid (node_modules)
+appium --nodeconfig /Users/eliasnogueira/Documents/workspace/android-appium-parallel-test/json/androidAppium1.json -p 4724 -U 192.168.56.101:5555
+
+appium --nodeconfig /Users/eliasnogueira/Documents/workspace/android-appium-parallel-test/json/androidAppium2.json -p 4725 -U 192.168.56.100:5555
+
+
