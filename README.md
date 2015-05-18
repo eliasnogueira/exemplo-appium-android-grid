@@ -34,14 +34,14 @@ Essa é uma boa abordagem, pois você pode ter mais de um dispositivo da mesma v
 Executar a série de comandos abaixo para a execução do teste
 
 1. Iniciar o Selenium Grid via linha de comando
-```java -jar selenium-server-standalone-2.45.0.jar -role hub`````
+    java -jar selenium-server-standalone-2.45.0.jar -role hub
 2. Acessar o console da grid (não haverá máquinas conectadas) 
-```http://localhost:4444/grid/console`````
+    http://localhost:4444/grid/console
 3. Iniciar um nó (dispositivo) e registra-lo a grid
-```appium --nodeconfig /Users/eliasnogueira/Documents/workspace/android-appium-parallel-test/json/androidAppium1.json -p 4724 -U 192.168.56.100:5555`````
+    appium --nodeconfig /Users/eliasnogueira/Documents/workspace/android-appium-parallel-test/json/androidAppium1.json -p 4724 -U 192.168.56.100:5555
 4. Adicionar o nome do dispositivo através da capacidade *udid*
 5. Alterar a URL do AndroidDriver, apontando para a grid
-```http://localhost:4444/wd/hub`````
+    http://localhost:4444/wd/hub
 6. Executar o teste
 
 
