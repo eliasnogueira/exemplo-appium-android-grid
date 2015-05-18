@@ -24,6 +24,9 @@ Essa é uma boa abordagem, pois você pode ter mais de um dispositivo da mesma v
 * [plugins/onedrive/README.md](https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md)
 
 ### Execução
+Primeiro instalar a aplicação que está na pasta *app*
+```adb install TrianguloApp.apk``
+
 
 ##### Teste em Grid #####
 1. Iniciar a aplicação do Appium
