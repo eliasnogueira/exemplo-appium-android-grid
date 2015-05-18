@@ -4,9 +4,23 @@
 java -jar selenium-server-standalone-2.45.0.jar -role hub
 
 
+# acessa o console da grid
+http://localhost:4444/grid/console
+
+
 # inicia no local appium grid (node_modules)
 appium --nodeconfig /Users/eliasnogueira/Documents/workspace/android-appium-parallel-test/json/androidAppium1.json -p 4724 -U 192.168.56.101:5555
 
 appium --nodeconfig /Users/eliasnogueira/Documents/workspace/android-appium-parallel-test/json/androidAppium2.json -p 4725 -U 192.168.56.100:5555
 
 
+# lista os dispositivos conectados (por ele se obtem o nome dos dispositivos)
+adb devices
+
+
+# localizar um processo utilizado determinada porta (mac, linux)
+lsof -i :<porta>
+
+
+# matar um processo (mac, linux)
+ill -9 <porta>
