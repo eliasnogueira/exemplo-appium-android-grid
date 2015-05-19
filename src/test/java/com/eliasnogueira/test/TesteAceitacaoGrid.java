@@ -25,7 +25,7 @@ public class TesteAceitacaoGrid {
 	 */
 	@BeforeMethod
 	public void preCondicao() throws MalformedURLException {
-		DesiredCapabilities capacidade = new DesiredCapabilities();
+		capacidade = new DesiredCapabilities();
 				
 		// informa qual a plataforma para o dispositivo, da grid e onde irá executar (device ou emulator)
 		capacidade.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);

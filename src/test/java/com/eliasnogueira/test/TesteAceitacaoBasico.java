@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -25,6 +26,8 @@ public class TesteAceitacaoBasico {
 	 */
 	@BeforeMethod
 	public void preCondicao() throws MalformedURLException {
+		capacidade = new DesiredCapabilities();
+		
 		// informa qual a plataforma para o dispositivo, da grid e onde irá executar (device ou emulator)
 		capacidade.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 		capacidade.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
@@ -52,7 +55,7 @@ public class TesteAceitacaoBasico {
 	 * Teste para verificar se o triangulo com lados iguais é um equilátero 
 	 */
 	@Test
-	public void testeTriaguloEquilatero() throws MalformedURLException {
+	public void testeTriaguloEquilatero() throws MalformedURLException, UnsupportedEncodingException {
 		
 		/*
 		 * O comando para localizacao de um componente android é driver.findElement(By.estrategia)
